@@ -6,4 +6,4 @@ if ARGV.any?
   exit
 end
 
-puts Dir["*"].select { |path| Dir.exist?(path) }
+puts Dir.glob('*').select { |path| Dir.exist?(path) }
