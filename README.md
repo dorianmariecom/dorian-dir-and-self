@@ -1,13 +1,13 @@
-# `dorian-dirs`
+# `dorian-dir`
 
 List directories
 
-e.g. `dirs`
+e.g. `dir`
 
 ### Install
 
 ```bash
-gem install dorian-dirs
+gem install dorian-dir
 ```
 
 Or as part of my other gems:
@@ -19,7 +19,7 @@ gem install dorian
 ### Usage
 
 ```bash
-> dirs
+> dir
 code
 code-ruby
 coif1plus.fr
@@ -28,7 +28,7 @@ dorian-all
 dorian-anonymize
 dorian-anonymize-json
 dorian-anonymize-yaml
-dorian-dirs
+dorian-dir
 dorian-dot
 dorian-each
 dorian-git-ls-ruby-files

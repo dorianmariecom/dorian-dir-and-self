@@ -3,7 +3,7 @@
 require "spec_helper"
 require "tmpdir"
 
-RSpec.describe "dirs" do
+RSpec.describe "dir" do
   it "works" do
     tempdir = Dir.mktmpdir
 
@@ -13,7 +13,7 @@ RSpec.describe "dirs" do
       `mkdir -p nested/dir/ectory bin spec`
       `touch a.rb a.js nested/file`
 
-      expect(`#{pwd}/bin/dirs`).to eq(<<~OUTPUT)
+      expect(`#{pwd}/bin/dir`).to eq(<<~OUTPUT)
       bin
       nested
       spec

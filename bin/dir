@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 if ARGV.any?
-  puts "USAGE: dirs"
+  puts "USAGE: dir"
   exit
 end
 
