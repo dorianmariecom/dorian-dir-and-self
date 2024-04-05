@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+if ARGV.any?
+  puts "USAGE: dirs"
+  exit
+end
+
+puts Dir["*"].select { |path| Dir.exist?(path) }
