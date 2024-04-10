@@ -14,9 +14,9 @@ RSpec.describe "dir" do
       `touch a.rb a.js nested/file`
 
       expect(`#{pwd}/bin/dir`).to eq(<<~OUTPUT)
-      bin
-      nested
-      spec
+        bin
+        nested
+        spec
       OUTPUT
     end
   ensure

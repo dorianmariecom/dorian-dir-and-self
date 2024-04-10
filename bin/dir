@@ -10,8 +10,9 @@ PATHS = ARGV.any? ? ARGV : ["."]
 
 PATHS.each do |path|
   puts(
-    Dir.glob("#{path}/*").select { |path| Dir.exist?(path) }.map do |path|
-      File.basename(path)
-    end
+    Dir
+      .glob("#{path}/*")
+      .select { |path| Dir.exist?(path) }
+      .map { |path| File.basename(path) }
   )
 end
