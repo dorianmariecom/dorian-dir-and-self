@@ -1,20 +1,18 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-if ARGV.first == "-h" || ARGV.first == "--help"
-  puts "USAGE: dir [PATHS...]"
-  exit
-end
+require "git"
 
-PATHS = ARGV.any? ? ARGV : ["."]
+puts "."
 
-puts PATHS
-
-PATHS.each do |path|
-  puts(
-    Dir
-      .glob("#{path}/*")
-      .select { |path| Dir.exist?(path) }
-      .map { |path| File.basename(path) }
-  )
-end
+puts(
+  Git
+    .open(".")
+    .ls_files
+    .map(&:first)
+    .map { |path| path.split("/").first }
+    .select { |path| Dir.exist?(path) }
+    .reject { |path| path.start_with?(".") }
+    .sort
+    .uniq
+)

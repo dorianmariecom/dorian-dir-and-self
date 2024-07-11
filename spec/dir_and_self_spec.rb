@@ -3,7 +3,7 @@
 require "spec_helper"
 require "tmpdir"
 
-RSpec.describe "dir" do
+RSpec.describe "dir-and-self" do
   it "works" do
     tempdir = Dir.mktmpdir
 
@@ -11,7 +11,9 @@ RSpec.describe "dir" do
 
     Dir.chdir(tempdir) do
       `mkdir -p nested/dir/ectory bin spec`
-      `touch a.rb a.js nested/file`
+      `touch a.rb a.js nested/file bin/a spec/a`
+      `git init`
+      `git add .`
 
       expect(`#{pwd}/bin/dir-and-self`).to eq(<<~OUTPUT)
         .

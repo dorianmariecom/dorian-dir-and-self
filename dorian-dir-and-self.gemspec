@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dorian-dir-and-self"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
   s.summary = "List directories and self"
   s.description = "#{s.summary}\n\ne.g. `dir-and-self`"
   s.authors = ["Dorian Marié"]
@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/dorianmariecom/dorian-dir-and-self"
   s.license = "MIT"
   s.metadata = { "rubygems_mfa_required" => "true" }
+  s.add_dependency "git"
 end
