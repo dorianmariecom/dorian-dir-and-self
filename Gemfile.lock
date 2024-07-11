@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dorian-dir (0.4.0)
+    dorian-dir (0.4.1)
 
 GEM
   remote: https://rubygems.org/

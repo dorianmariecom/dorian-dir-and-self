@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dorian-dir"
-  s.version = "0.4.0"
+  s.version = "0.4.1"
   s.summary = "List directories"
   s.description = "#{s.summary}\n\ne.g. `dir`"
   s.authors = ["Dorian Marié"]
