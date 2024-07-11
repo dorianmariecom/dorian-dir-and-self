@@ -8,6 +8,8 @@ end
 
 PATHS = ARGV.any? ? ARGV : ["."]
 
+puts PATHS
+
 PATHS.each do |path|
   puts(
     Dir

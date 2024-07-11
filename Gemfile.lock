@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dorian-dir (0.4.1)
+    dorian-dir-and-self (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -92,7 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dorian-dir!
+  dorian-dir-and-self!
   rspec
   rubocop-rails-omakase
 

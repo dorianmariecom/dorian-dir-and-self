@@ -13,7 +13,8 @@ RSpec.describe "dir" do
       `mkdir -p nested/dir/ectory bin spec`
       `touch a.rb a.js nested/file`
 
-      expect(`#{pwd}/bin/dir`).to eq(<<~OUTPUT)
+      expect(`#{pwd}/bin/dir-and-self`).to eq(<<~OUTPUT)
+        .
         bin
         nested
         spec
