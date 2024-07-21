@@ -1,13 +1,13 @@
-# `dorian-dir`
+# `dorian-dir-and-self`
 
-List directories
+List directories and self
 
-e.g. `dir`
+e.g. `dir-and-self`
 
 ### Install
 
 ```bash
-gem install dorian-dir
+gem install dorian-dir-and-self
 ```
 
 Or as part of my other gems:
@@ -19,7 +19,7 @@ gem install dorian
 ### Usage
 
 ```bash
-> dir
+> dir-and-self
 code
 code-ruby
 coif1plus.fr
@@ -50,4 +50,5 @@ dorianmarie.fr
 dotfiles
 language-ruby
 template-ruby
+.
 ```
