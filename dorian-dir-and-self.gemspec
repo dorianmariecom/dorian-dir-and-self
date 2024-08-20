@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dorian-dir-and-self"
-  s.version = "0.3.1"
+  s.version = File.read("VERSION").strip
   s.summary = "list directories and self"
   s.description = s.summary
   s.authors = ["Dorian Marié"]
