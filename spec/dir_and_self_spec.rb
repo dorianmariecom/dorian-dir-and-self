@@ -16,10 +16,10 @@ RSpec.describe "dir-and-self" do
       `git add .`
 
       expect(`#{pwd}/bin/dir-and-self`).to eq(<<~OUTPUT)
-        .
         bin
         nested
         spec
+        .
       OUTPUT
     end
   ensure

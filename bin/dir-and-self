@@ -2,6 +2,23 @@
 # frozen_string_literal: true
 
 require "git"
+require "dorian/arguments"
+
+parsed =
+  Dorian::Arguments.parse(
+    version: {
+      alias: :v
+    },
+    help: {
+      alias: :h
+    }
+  )
+
+abort parsed.help if parsed.options.help
+
+if parsed.options.version
+  abort File.read(File.expand_path("../../VERSION", __FILE__))
+end
 
 puts(
   Git
