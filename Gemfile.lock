@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dorian-dir-and-self (2.0.0)
+    dorian-dir-and-self (2.0.1)
       dorian-arguments
       git
 
